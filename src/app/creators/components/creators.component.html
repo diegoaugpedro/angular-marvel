@@ -1,0 +1,7 @@
+<ng-container *ngIf="creatorsService.creators$ | async">
+  <section class="creators">
+    <ng-container *ngFor="let creator of creatorsService.creators$ | async">
+      <creator [data]="creator"></creator>
+    </ng-container>
+  </section>
+</ng-container>
